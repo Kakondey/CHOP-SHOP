@@ -1,0 +1,114 @@
+.cartitem{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    gap: 8px;
+    background: aliceblue;
+    border-radius: 8px;
+    place-items: center;
+    background: aliceblue;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.cartitem_image{
+    width: 100%;
+}
+
+.cartitem_image>img{
+    width: 300px;
+    height: 100px;
+}
+.cartitem__name {
+    text-decoration: none;
+    color: aliceblue;
+    background: rgb(59, 92, 236);
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgb(59, 92, 236);
+    font-weight: bold;
+    transition: all 0.5s ease-out;
+    text-align: center;
+}
+
+.cartitem__name:hover {
+    width: 50%;
+    color: rgb(59, 92, 236);
+    background: aliceblue;
+}
+
+.cartitem_select{
+    padding: 10px 17px;
+     /* height: 30px; */
+     border-radius: 8px;
+     color: rgb(59, 92, 236);
+     border-style: none;
+     border: 1px solid rgb(59, 92, 236);
+     font-weight: bold;
+}
+
+.cartitem_deleteBtn{
+    padding: 10px 17px;
+    color: rgb(223, 37, 37);
+    background: wheat;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    border-radius: 8px;
+}
+
+.cartitem_deleteBtn:hover,
+.cartitem_deleteBtn:focus ,
+.cartitem_deleteBtn:active {
+    background: #171717;
+    transform: scale(1.2);
+}
+
+@media (max-width:700px){
+    .cartitem{
+        width: 100%;
+    }
+    .cartitem__name{
+        font-size: 0.6rem;
+    }
+
+    .cartitem_select,.cartitem_deleteBtn{
+        padding: 8px 13px;
+    }
+
+    .cartitem_price{
+        font-size: 0.8rem;
+    }
+
+
+}
+
+@media (max-width:500px) {
+    .cartitem {
+        width: 100%;
+    }
+    .cartitem__name {
+        font-size: 0.6rem;
+    }
+
+    .cartitem_select,
+    .cartitem_deleteBtn {
+        padding: 5px 8px;
+    }
+
+    .cartitem_select>option{
+        width: 30px;
+        font-size: 0.6rem;
+        color: rgb(59, 92, 236);
+    }
+    .cartitem_price {
+        font-size: 0.6rem;
+    }
+
+    .cartitem_image>img{
+        width: 100px;
+    }
+
+
+}
